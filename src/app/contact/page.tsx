@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { FacebookIcon, InstagramIcon } from '@/components/icons/SocialIcons';
 import { contactConfig, getWhatsAppUrl } from '@/lib/site-config';
 
 export const metadata: Metadata = {
@@ -115,37 +116,19 @@ export default function ContactPage() {
                     href={contactConfig.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Facebook"
-                    className="w-10 h-10 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:opacity-90 transition-opacity font-bold text-xs"
+                    aria-label="Follow Kasat Virtual College of Education on Facebook"
+                    className="w-10 h-10 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:opacity-90 hover:scale-105 transition-all shadow-sm"
                   >
-                    f
+                    <FacebookIcon size={20} />
                   </a>
                   <a
                     href={contactConfig.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Instagram"
-                    className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white flex items-center justify-center hover:opacity-90 transition-opacity font-bold text-xs"
+                    aria-label="Follow Kasat Virtual College of Education on Instagram"
+                    className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white flex items-center justify-center hover:opacity-90 hover:scale-105 transition-all shadow-sm"
                   >
-                    ig
-                  </a>
-                  <a
-                    href={contactConfig.social.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="YouTube"
-                    className="w-10 h-10 rounded-full bg-[#FF0000] text-white flex items-center justify-center hover:opacity-90 transition-opacity font-bold text-xs"
-                  >
-                    yt
-                  </a>
-                  <a
-                    href={contactConfig.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                    className="w-10 h-10 rounded-full bg-[#0A66C2] text-white flex items-center justify-center hover:opacity-90 transition-opacity font-bold text-xs"
-                  >
-                    in
+                    <InstagramIcon size={20} />
                   </a>
                 </div>
               </div>

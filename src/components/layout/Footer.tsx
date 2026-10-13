@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, MapPin, Globe, MessageCircle, Share2, Camera, Play, Briefcase } from 'lucide-react';
+import { Phone, Mail, MapPin, Globe, MessageCircle } from 'lucide-react';
+import { FacebookIcon, InstagramIcon } from '@/components/icons/SocialIcons';
 import { contactConfig, getWhatsAppUrl, siteConfig } from '@/lib/site-config';
 
 export function Footer() {
@@ -30,17 +31,23 @@ export function Footer() {
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-3">
-              <a href={contactConfig.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-8 h-8 bg-white/10 hover:bg-[#A20D65] rounded flex items-center justify-center transition-colors">
-                <Share2 size={14} />
+              <a
+                href={contactConfig.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Kasat Virtual College of Education on Facebook"
+                className="w-9 h-9 bg-white/10 hover:bg-[#1877F2] rounded-full flex items-center justify-center transition-all duration-200 text-white hover:scale-105"
+              >
+                <FacebookIcon size={16} />
               </a>
-              <a href={contactConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-8 h-8 bg-white/10 hover:bg-[#A20D65] rounded flex items-center justify-center transition-colors">
-                <Camera size={14} />
-              </a>
-              <a href={contactConfig.social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-8 h-8 bg-white/10 hover:bg-[#A20D65] rounded flex items-center justify-center transition-colors">
-                <Play size={14} />
-              </a>
-              <a href={contactConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-8 h-8 bg-white/10 hover:bg-[#A20D65] rounded flex items-center justify-center transition-colors">
-                <Briefcase size={14} />
+              <a
+                href={contactConfig.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Kasat Virtual College of Education on Instagram"
+                className="w-9 h-9 bg-white/10 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] rounded-full flex items-center justify-center transition-all duration-200 text-white hover:scale-105"
+              >
+                <InstagramIcon size={16} />
               </a>
             </div>
           </div>

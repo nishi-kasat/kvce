@@ -22,8 +22,6 @@ export const contactConfig = {
   social: {
     facebook: 'https://www.facebook.com/kasatvce',
     instagram: 'https://www.instagram.com/kasatvce',
-    youtube: 'https://www.youtube.com/@kasatvce',
-    linkedin: 'https://www.linkedin.com/company/kasatvce',
   },
 };
 
