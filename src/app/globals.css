@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #101F49;
+  --magenta: #A20D65;
+  --plum: #650D50;
+  --white: #FFFFFF;
+  --bg-light: #F7F7FA;
+  --body-text: #26324A;
+  --muted-text: #667085;
+  --border: #E3E5EC;
+  --navy-light: #1a2f6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--body-text);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--magenta);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.2s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--magenta);
+  border-radius: 3px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
